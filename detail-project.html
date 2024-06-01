@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Adam Kandias - Portfolio - Lumajang Tourism</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Css For This Page -->
+    <link rel="stylesheet" href="css/detail-project.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="text-primary fw-bold m-0">Detail Project</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <!-- <div class="navbar-nav ms-auto py-0">
+                <a href="index.html#home" class="nav-item nav-link">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#skill" class="nav-item nav-link">Skills</a>
+            </div> -->
+            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 d-none d-lg-block mx-auto">
+                <h1 class="text-primary fw-bold m-0">Detail Project</h1>
+            </a>
+            <!-- <div class="navbar-nav me-auto py-0">
+                <a href="#service" class="nav-item nav-link">Services</a>
+                <a href="#project" class="nav-item nav-link">Projects</a>
+                <a href="#follow-me" class="nav-item nav-link">Follow</a>
+                <a href="#team" class="nav-item nav-link">Team</a>
+                <a href="#testimonial" class="nav-item nav-link">Testimonial</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div> -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="container pt-4">
+        <div class="detail-product card-body">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <!-- Main Image Container -->
+                    <div class="col-12 pt-1 pt-sm-0" id="main-image-container">
+                    </div>
+
+                    <!-- Image Thumbnails -->
+                    <div class="col-12 product-image-thumbs" id="thumbnails-container">
+                    </div>
+
+                    <!-- Project Table -->
+                    <div class="col-12 mt-4">
+                        <table class="table table-bordered table-sm align-middle" id="project-table">
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Project Description and Features -->
+                <div class="description col-12 col-sm-6 mt-4 mt-sm-0" id="project-description">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright Start -->
+    <footer class="container-fluid bg-dark text-white py-4">
+        <div class="container">
+            <div class="text-center mx-auto">
+                &copy; <a class="border-bottom text-secondary" href="#">AdamKandias</a>, All Right Reserved.
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+</body>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/typed/typed.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+<!-- Project Data JS -->
+<script src="projects.js"></script>
+<!-- Dynamic Content JS -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Extract the project title from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const projectTitle = urlParams.get('title');  // Example: "lumajang-tourism"
+
+        // Find the project data by title
+        const project = projects.find(p => p.title === projectTitle);
+
+        if (project) {
+            // Dynamically set the <title> tag
+            document.title = `Adam Kandias - Portfolio - ${project.mainTitle}`;
+
+            // Optionally set meta tags for SEO
+            if (project.keywords) {
+                document.querySelector('meta[name="keywords"]').setAttribute('content', project.keywords || '');
+            }
+            if (project.shortDescription) {
+                document.querySelector('meta[name="description"]').setAttribute('content', project.shortDescription || '');
+            }
+
+            // Update main image
+            const mainImageContainer = document.getElementById('main-image-container');
+            mainImageContainer.innerHTML = `
+                <a href="${project.mainImage}" data-lightbox="project-image" data-title="${project.mainTitle}">
+                    <img src="${project.mainImage}" class="product-image img-fluid border rounded" alt="Product Image">
+                </a>
+            `;
+
+            // Update thumbnails
+            const thumbnailsContainer = document.getElementById('thumbnails-container');
+            thumbnailsContainer.innerHTML = '';
+            project.images.forEach((image, index) => {
+                currentIndex = index + 1;
+                const activeClass = index === 0 ? ' active' : '';
+                thumbnailsContainer.innerHTML += `
+                <div class="product-image-thumb${activeClass}">
+                    <a href="${image}" data-lightbox="project-image" data-title="${project.mainTitle} Image ${currentIndex}">
+                        <img src="${image}" alt="${project.title}-image-${currentIndex}" class="img-fluid">
+                    </a>
+                </div>
+            `;
+            });
+
+            // Update project table
+            const projectTable = document.getElementById('project-table');
+            projectTable.innerHTML = `
+                <tbody>
+                    <tr>
+                        <th class="col-3 text-center" scope="row">Category</th>
+                        <td class="ps-3">${project.category}</td>
+                    </tr>
+                    <tr>
+                        <th class="col-3 text-center" scope="row">Tech Stack</th>
+                        <td class="ps-3">${project.techStack}</td>
+                    </tr>
+                    ${project.downloadLink ? `
+                    <tr>
+                        <th class="col-3 text-center" scope="row">Download</th>
+                        <td class="ps-3">
+                            <a target="_blank" href="${project.downloadLink}">
+                                <img src="img/playstore-logo.png" alt="playstore-logo" height="20">
+                                <span class="text-muted"> Click to download via Playstore</span>
+                            </a>
+                        </td>
+                    </tr>` : ''}
+                    ${project.githubLink ? `
+                    <tr>
+                        <th class="col-3 text-center" scope="row">GitHub</th>
+                        <td class="ps-3">
+                            <a target="_blank" href="${project.githubLink}">
+                                <img src="img/github-logo.png" alt="github-logo" height="20">
+                                <span class="text-muted"> Click to see GitHub repository</span>
+                            </a>
+                        </td>
+                    </tr>` : ''}
+                </tbody>
+            `;
+
+            // Update project description
+            const projectDescription = document.getElementById('project-description');
+            projectDescription.innerHTML = `
+                <h3 class="fw-bold">${project.mainTitle}</h3>
+                <h5 class="my-2 fw-bold">${project.category}</h5>
+                <div class="star mt-1 mb-3">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <div>${project.description}</div>
+                ${project.features ? `
+                <br>
+                <div><strong>Some of the Features:</strong></div>
+                <ul>
+                    ${project.features.map(feature => `<li>${feature}</li>`).join('')}
+                    <li>Etc....</li>
+                </ul>` : ''}
+            `;
+        } else {
+            const container = document.querySelector('.container');
+            container.innerHTML = `
+            <div class="d-flex flex-column align-items-center justify-content-center" style="height: 100vh;">
+                <h1 class="text-center text-danger fw-bold">Project Not Found 🤔</h1>
+                <button class="btn btn-primary mt-3" onclick="history.back()">Back</button>
+            </div>
+        `;
+        }
+    });
+</script>
+<!-- Lightbox and Active Image -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        });
+
+        const thumbs = document.querySelectorAll('.product-image-thumb');
+
+        thumbs.forEach(thumb => {
+            thumb.addEventListener('click', function () {
+                // Menghapus class active dari semua image thumb
+                thumbs.forEach(t => t.classList.remove('active'));
+
+                // Menambahkan class active pada image thumb yang diklik
+                this.classList.add('active');
+            });
+        });
+
+        const productImage = document.querySelector('.product-image');
+
+        document.querySelectorAll('.product-image-thumb').forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                const imageSrc = thumb.querySelector('img').getAttribute('src');
+                productImage.parentElement.setAttribute('href', imageSrc);
+                productImage.setAttribute('src', imageSrc);
+
+                document.querySelector('.product-image-thumb.active').classList.remove('active');
+                thumb.classList.add('active');
+            });
+        });
+    });
+</script>
+
+</html>
