@@ -135,6 +135,32 @@
     // Update the content of the h1 tag using jQuery
     $('#dynamicYear').text(calculateYearsSince('2021-01-01'));
 
+    function calculateDuration(startDate) {
+        const start = new Date(startDate);
+        const now = new Date();
+
+        let years = now.getFullYear() - start.getFullYear();
+        let months = now.getMonth() - start.getMonth();
+
+        if (months < 0) {
+            years--;
+            months += 12;
+        }
+
+        if (years > 0 && months > 0) {
+            return `${years} year ${months} month`;
+        } else if (years > 0 && months === 0) {
+            return `${years} year`;
+        } else {
+            return `${months} month`;
+        }
+    }
+
+    $(document).ready(function () {
+        $('#eepisatDuration').text(calculateDuration('2024-09-01'));
+        $('#guritaDuration').text(calculateDuration('2023-08-01'));
+    });
+
     // Button Play Auto Scroll
     let isContinuousScrolling = false;
 

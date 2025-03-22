@@ -1,6 +1,91 @@
 // projects.js
 const projects = [
     {
+        title: "sare",
+        mainTitle: "SARE",
+        mainImage: "img/sare/3.webp",
+        images: [
+            "img/sare/1.webp",
+            "img/sare/2.webp",
+            "img/sare/3.webp",
+            "img/sare/4.webp",
+            "img/sare/5.webp",
+            "img/sare/6.webp",
+            "img/sare/7.webp",
+            "img/sare/8.webp",
+        ],
+        category: "Mobile App",
+        techStack: "Dart & Flutter",
+        downloadLink: "https://play.google.com/store/apps/details?id=com.kptk.sare",
+        description: `
+           SARE as a gamification platform designed to help students in developing competencies. Users are also able to operate and apply the main features in the SARE platform properly and correctly, and understand SARE as a tool that helps students determine career focus according to their interests and talents. In addition, users are also able to document and present the use of the SARE platform in the context of student career development.
+        `,
+        features: [
+            "Many Majors of Learning",
+            "Clear Learning Roadmap",
+            "Quiz According to Major Everyday",
+            "Easy Learning Access",
+            "Many Achiements and Level",
+            "Gaming Environtment",
+        ],
+        keywords: "adam kandias, adam kandias project, sare, mobile app, sare app, sare kptk",
+        shortDescription: "SARE as a gamification platform designed to help students in developing competencies. Users are also able to operate and apply the main features in the SARE platform properly and correctly, and understand SARE as a tool that helps students determine career focus according to their interests and talents. In addition, users are also able to document and present the use of the SARE platform in the context of student career development.!",
+    },
+    {
+        title: "tambalin",
+        mainTitle: "Tambalin",
+        mainImage: "img/tambalin/1.png",
+        images: [
+            "img/tambalin/1.png",
+            "img/tambalin/2.png",
+            "img/tambalin/3.png",
+            "img/tambalin/4.png",
+        ],
+        category: "Mobile App",
+        techStack: "Dart & Flutter",
+        // downloadLink: "https://play.google.com/store/apps/details?id=com.dispar_lumajang.lumajang_tourism",
+        description: `
+            Tambalin is an application that helps motorbike users to find the nearest tire repair shop. Of course, we must have experienced a flat tire and didn't know where the nearest repair shop was. Moreover, we have to push our motorbike to the repair shop and it is not certain that the repair shop is open. Therefore, Tambalin will connect you with tire repair partners who are ready to serve you. You just order and wait for the repair shop to come and help you solve your problem!
+        `,
+        features: [
+            "Get Nearest Workshop",
+            "Cashless Payment Method",
+            "Workshop Information",
+            "Easy Booking System",
+            "Realtime Chat",
+            "Realtime Map",
+            "Easy Map and Navigation",
+        ],
+        keywords: "adam kandias, adam kandias project, tambalin, mobile app, ban bocor, bengkel terdekat",
+        shortDescription: "Find the nearest workshop around you, anytime, everywhere!",
+    },
+    {
+        title: "tambalin-mitra",
+        mainTitle: "Tambalin-Mitra",
+        mainImage: "img/tambalin-mitra/2.png",
+        images: [
+            "img/tambalin-mitra/1.png",
+            "img/tambalin-mitra/2.png",
+        ],
+        category: "Mobile App",
+        techStack: "Dart & Flutter",
+        // downloadLink: "https://play.google.com/store/apps/details?id=com.dispar_lumajang.lumajang_tourism",
+        description: `
+            Tambalin Mitra is an application for workshop tire repair and services to find user. With Tambalin Mitra, grow your bussiness and find more users
+            `,
+        features: [
+            "Get Nearest User",
+            "Cashless Payment Method",
+            "Workshop Information",
+            "Easy Booking System",
+            "Realtime Chat",
+            "Realtime Map",
+            "Easy Map and Navigation",
+        ],
+        keywords: "adam kandias, adam kandias project, tambalin, tambalin-mitra, mobile app, ban bocor, bengkel terdekat",
+        shortDescription: "Tambalin Mitra is an application for workshop tire repair and services to find user. With Tambalin Mitra, grow your bussiness and find more users!",
+    },
+    {
         title: "lumajang-tourism",
         mainTitle: "Lumajang Tourism",
         mainImage: "img/lumajang-tourism/1.webp",
