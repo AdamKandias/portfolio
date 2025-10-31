@@ -209,6 +209,16 @@
                             </a>
                         </td>
                     </tr>` : ''}
+                    ${project.websiteLink ? `
+                    <tr>
+                        <th class="col-3 text-center" scope="row">Web Link</th>
+                        <td class="ps-3">
+                            <a target="_blank" href="${project.websiteLink}">
+                                <img src="img/website-logo.png" alt="website-logo" height="20">
+                                <span class="text-muted"> Click to see the website</span>
+                            </a>
+                        </td>
+                    </tr>` : ''}
                 </tbody>
             `;
 

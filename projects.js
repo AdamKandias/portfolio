@@ -281,4 +281,40 @@ const projects = [
             "Indonesian Translation",
         ],
     },
+    {
+        title: "vania-konstruksi",
+        mainTitle: "Vania Konstruksi",
+        mainImage: "img/vania-konstruksi/1.png",
+        images: [
+            "img/vania-konstruksi/1.png",
+            "img/vania-konstruksi/2.png",
+            "img/vania-konstruksi/3.png",
+            "img/vania-konstruksi/4.png",
+            "img/vania-konstruksi/5.png",
+        ],
+        category: "Web App",
+        techStack: "Next.js, Firebase, TailwindCSS",
+        websiteLink: "https://www.vaniakonstruksi.com/",
+        description: `
+        Vania Konstruksi is a web-based platform for heavy equipment rental management, 
+        designed to simplify business operations for construction companies. 
+        The system provides end-to-end solutions from equipment listing, branch management, 
+        and business settings to real-time monitoring of rental transactions. 
+        Built using Next.js and Firebase, it delivers a seamless, fast, and secure user experience 
+        for both customers and administrators.
+    `,
+        features: [
+            "Real-time Equipment Rental Management",
+            "Branch and Business Settings Management",
+            "Admin Dashboard with Role-based Access",
+            "Comprehensive Equipment Database",
+            "Customer Booking and Payment Tracking",
+            "Analytics and Transaction Report Generation",
+            "Firebase Authentication and Firestore Integration",
+            "Responsive and Modern UI with TailwindCSS",
+        ],
+        keywords: "adam kandias, adam kandias project, vania konstruksi, construction app, equipment rental, web app, firebase, nextjs",
+        shortDescription: "A complete heavy equipment rental management web app built with Next.js and Firebase, featuring admin dashboard, branch management, and real-time operations monitoring.",
+    },
+
 ];
