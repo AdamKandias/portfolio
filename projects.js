@@ -133,7 +133,7 @@ const projects = [
             "img/wearshoes/2.png",
             "img/wearshoes/3.png",
         ],
-        category: "Mobile App",
+        category: "Web App",
         techStack: "PHP, Bootstrap, Javascript",
         githubLink: "https://github.com/AdamKandias/wearshoes.com",
         description: `
