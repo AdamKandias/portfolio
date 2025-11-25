@@ -179,11 +179,13 @@
 
             // Update project table
             const projectTable = document.getElementById('project-table');
+            // Handle both string and array categories for backward compatibility
+            const categories = Array.isArray(project.category) ? project.category.join(', ') : project.category;
             projectTable.innerHTML = `
                 <tbody>
                     <tr>
                         <th class="col-3 text-center" scope="row">Category</th>
-                        <td class="ps-3">${project.category}</td>
+                        <td class="ps-3">${categories}</td>
                     </tr>
                     <tr>
                         <th class="col-3 text-center" scope="row">Tech Stack</th>
@@ -224,9 +226,11 @@
 
             // Update project description
             const projectDescription = document.getElementById('project-description');
+            // Handle both string and array categories for backward compatibility
+            const categoryDisplay = Array.isArray(project.category) ? project.category.join(', ') : project.category;
             projectDescription.innerHTML = `
                 <h3 class="fw-bold">${project.mainTitle}</h3>
-                <h5 class="my-2 fw-bold">${project.category}</h5>
+                <h5 class="my-2 fw-bold">${categoryDisplay}</h5>
                 <div class="star mt-1 mb-3">
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>

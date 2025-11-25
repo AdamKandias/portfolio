@@ -212,7 +212,7 @@
                             </div>
                             <div class="skill mb-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="font-weight-bold">JavaScript</h6>
+                                    <h6 class="font-weight-bold">React.JS</h6>
                                     <h6 class="font-weight-bold">80%</h6>
                                 </div>
                                 <div class="progress">
@@ -429,8 +429,21 @@
                     // const shuffledProjects = shuffleArray(projects);
 
                     // Build the HTML string for projects
-                    const projectsHTML = projects.map(project => `
-                        <div class="col-lg-4 col-md-6 portfolio-item${project.category.toLowerCase().includes('mobile') ? ' mobile' : ' web'}">
+                    const projectsHTML = projects.map(project => {
+                        // Handle both string and array categories for backward compatibility
+                        const categories = Array.isArray(project.category) ? project.category : [project.category];
+                        
+                        // Determine CSS classes based on categories
+                        let categoryClasses = '';
+                        if (categories.some(cat => cat.toLowerCase().includes('mobile'))) {
+                            categoryClasses += ' mobile';
+                        }
+                        if (categories.some(cat => cat.toLowerCase().includes('web'))) {
+                            categoryClasses += ' web';
+                        }
+                        
+                        return `
+                        <div class="col-lg-4 col-md-6 portfolio-item${categoryClasses}">
                             <div class="portfolio-img rounded overflow-hidden">
                                 <img class="img-fluid rounded" src="${project.mainImage}" alt="">
                                 <div class="portfolio-btn">
@@ -442,7 +455,8 @@
                                 </div>
                             </div>
                         </div>
-                    `).join('');
+                    `;
+                    }).join('');
 
                     // Insert the HTML string into the projects container
                     document.getElementById('projects-container').innerHTML = projectsHTML;

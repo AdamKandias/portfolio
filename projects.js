@@ -43,7 +43,8 @@ const projects = [
         ],
         category: "Mobile App",
         techStack: "Dart & Flutter",
-        // downloadLink: "https://play.google.com/store/apps/details?id=com.dispar_lumajang.lumajang_tourism",
+        websiteLink: "https://www.tambal.in/",
+        downloadLink: "https://play.google.com/store/apps/details?id=com.gurita_langit.tambalin",
         description: `
             Tambalin is an application that helps motorbike users to find the nearest tire repair shop. Of course, we must have experienced a flat tire and didn't know where the nearest repair shop was. Moreover, we have to push our motorbike to the repair shop and it is not certain that the repair shop is open. Therefore, Tambalin will connect you with tire repair partners who are ready to serve you. You just order and wait for the repair shop to come and help you solve your problem!
         `,
@@ -69,7 +70,8 @@ const projects = [
         ],
         category: "Mobile App",
         techStack: "Dart & Flutter",
-        // downloadLink: "https://play.google.com/store/apps/details?id=com.dispar_lumajang.lumajang_tourism",
+        websiteLink: "https://www.tambal.in/",
+        downloadLink: "https://play.google.com/store/apps/details?id=com.gurita_langit.tambalin_mitra",
         description: `
             Tambalin Mitra is an application for workshop tire repair and services to find user. With Tambalin Mitra, grow your bussiness and find more users
             `,
@@ -97,7 +99,7 @@ const projects = [
             "img/lumajang-tourism/5.webp",
             "img/lumajang-tourism/6.webp",
         ],
-        category: "Mobile App",
+        category: ["Mobile App", "Web App"],
         techStack: "Dart & Flutter",
         downloadLink: "https://play.google.com/store/apps/details?id=com.dispar_lumajang.lumajang_tourism",
         description: `
@@ -121,7 +123,7 @@ const projects = [
             "Tourist Map",
             "Lumajang News",
         ],
-        keywords: "adam kandias, adam kandias project, lumajang tourism, mobile app, tourist attractions, lodging, events, tour packages",
+        keywords: "adam kandias, adam kandias project, lumajang tourism, mobile app, web app, tourist attractions, lodging, events, tour packages",
         shortDescription: "Discover Lumajang with the Lumajang Tourism mobile app. Find accommodations, events, and tour packages.",
     },
     {
